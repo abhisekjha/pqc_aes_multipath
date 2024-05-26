@@ -1,0 +1,5 @@
+# Ignore pyky
+pyky/
+
+#ingore venv
+venv/
