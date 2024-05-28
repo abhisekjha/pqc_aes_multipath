@@ -29,13 +29,41 @@
             border-radius: 10px;
             margin: 20px 0;
         }
+        /* styles.css */
+.media-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    align-items: center; /* Center the icons vertically */
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.px-4 {
+    padding-left: 16px; /* Adjust the padding values as needed */
+    padding-right: 16px;
+}
+
+.media-icons a {
+    color: #000; /* Set the icon color */
+    font-size: 24px; /* Adjust the icon size */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.media-icons a:hover {
+    color: #007bff; /* Change the color on hover */
+}
+
     </style>
 </head>
 <body>
     <div class="container">
         <h1 class="mt-5">Secure Messaging System</h1>
         <p class="lead">This document explains the process of encrypting messages using AES-256 and securing the keys with Kyber, a post-quantum cryptographic algorithm.</p>
-
+        
+        <div class="media-icons">
+            <a href="https://github.com/abhisekjha/pqc_aes_multipath" target="_blank" class="px-4">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
         <h2>Overview</h2>
         <p>The goal is to securely encrypt packets of messages (binary files) using AES-256, with the AES session keys being securely exchanged using Kyber. This ensures robust security against both current and future cryptographic threats.</p>
 
