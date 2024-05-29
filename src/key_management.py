@@ -1,4 +1,4 @@
-from ccakem import kem_keygen512, kem_encaps512, kem_decaps512
+from pyky.ccakem import kem_keygen512, kem_encaps512, kem_decaps512
 
 def generate_kyber_keypair():
     """Generate a Kyber key pair."""

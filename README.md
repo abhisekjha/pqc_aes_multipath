@@ -96,4 +96,20 @@ Use the recipient's Kyber public key to encrypt this AES session key, creating a
 
 This script ensures the secure encryption and decryption of messages using a combination of Kyber and AES-256, providing strong security against both current and future threats.
 
+# Steps to Run the Test
 
+1. Activate the environment
+```
+source venv/bin/activate
+```
+
+2. Set the PYTHONPATH to include the current directory and the pyky directory:
+```
+export PYTHONPATH=$PYTHONPATH:/path/to/pqc_aes_multipath:/path/to/pqc_aes_multipath/pyky
+```
+3. To Verify PYTHONPATH
+
+```
+echo $PYTHONPATH
+
+```
