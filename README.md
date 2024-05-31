@@ -20,9 +20,7 @@ This project demonstrates how to securely encrypt packets of messages using AES-
            V
 +-----------------------+
 | For each message:     |
-| 1. Generate AES-256   |
-|    session key        |
-| 2. Encrypt session key|
+| 1. Encrypt session key|
 |    with Kyber         |
 +-----------------------+
            |
