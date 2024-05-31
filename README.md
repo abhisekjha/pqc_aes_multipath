@@ -86,7 +86,7 @@ https://github.com/asdfjkl/pyky.git
 
 4. Set the PYTHONPATH to include the current directory and the pyky directory:
 ```
-echo $PYTHONPATH /Users/abhisekjha/Multipath_Research/PQC/pqc_aes_multipath:/Users/abhisekjha/Multipath_Research/PQC/pqc_aes_multipath/pyky
+echo $PYTHONPATH /path/to/pqc_aes_multipath:/path/to/pqc_aes_multipath/pyky
 ```
 5. To Verify PYTHONPATH
 
