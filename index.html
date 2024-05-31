@@ -41,7 +41,7 @@
             padding-right: 16px;
         }
         .media-icons a {
-            color: #000;
+            color: #121010;
             font-size: 24px;
             transition: color 0.3s ease;
         }
@@ -66,7 +66,7 @@
         <h2>Steps</h2>
         <ol>
             <li><strong>Key Generation:</strong> Generate a pair of public and private keys for the recipient using Kyber.</li>
-            <li><strong>Encrypting Session Key:</strong> For each message, generate a 256-bit AES session key and encrypt it using the recipient's Kyber public key.</li>
+            <li><strong>Encrypting Session Key:</strong> For each message, generate a 256-bit session key and encrypt the key using the recipient's Kyber public key.</li>
             <li><strong>Encrypting Messages:</strong> Encrypt the message using AES-256 with the generated session key.</li>
             <li><strong>Storing Encrypted Data:</strong> Store the encrypted session key and the encrypted message together in a file.</li>
             <li><strong>Decrypting Session Key:</strong> The recipient decrypts the AES session key using their Kyber private key.</li>
