@@ -3,11 +3,9 @@
 This project demonstrates how to securely encrypt packets of messages using AES-256, with the AES session keys being securely exchanged using Kyber, a post-quantum cryptographic algorithm. The process ensures that the encrypted messages are protected against both classical and quantum attacks.
 
 ## Check Out the Webpage to learn more
+
 <a href="https://www.abhisekjha.com.np/pqc_aes_multipath">
-    <img src="https://img.shields.io/badge/Website-PQC-AES-red?style=flat-square">
-</a>
-<a href="https://www.abhisekjha.com.np">
-    <img src="https://img.shields.io/badge/Website-abhisekjha.com.np-red?style=flat-square">
+    <img src="https://img.shields.io/badge/Website-pqc_aes_multipath-red?style=flat-square">
 </a>
 
 
