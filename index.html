@@ -32,21 +32,21 @@
         }
         .media-icons {
             display: flex;
-            justify-content: center; /* Center the icons */
-            align-items: center; /* Center the icons vertically */
-            margin-top: 20px; /* Adjust the top margin as needed */
+            justify-content: center;
+            align-items: center; 
+            margin-top: 20px; 
         }
         .px-4 {
-            padding-left: 16px; /* Adjust the padding values as needed */
+            padding-left: 16px; 
             padding-right: 16px;
         }
         .media-icons a {
-            color: #000; /* Set the icon color */
-            font-size: 24px; /* Adjust the icon size */
-            transition: color 0.3s ease; /* Smooth transition for hover effect */
+            color: #000;
+            font-size: 24px;
+            transition: color 0.3s ease;
         }
         .media-icons a:hover {
-            color: #007bff; /* Change the color on hover */
+            color: #b27805a5;
         }
     </style>
 </head>
@@ -83,9 +83,7 @@
                        V<br>
             +-----------------------+<br>
             | For each message:     |<br>
-            | 1. Generate AES-256   |<br>
-            |    session key        |<br>
-            | 2. Encrypt session key|<br>
+            | 1. Encrypt session key|<br>
             |    with Kyber         |<br>
             +-----------------------+<br>
                        |<br>
@@ -118,7 +116,7 @@
         <p>The process ensures that the message is encrypted securely and can only be decrypted by the intended recipient, leveraging the strengths of both Kyber and AES-256 to secure messages effectively.</p>
 
         <h3>Key Generation</h3>
-        <p>Use Kyber to generate a public/private key pair for the recipient. The public key is used to encrypt the session keys, while the private key is used to decrypt them.</p>
+        <p>Use Kyber to generate a public/private key pair for the recipient. The public key is used to encrypt encryption, the private key is used to decrypt them.</p>
 
         <h3>Encrypting the Session Key</h3>
         <p>For each message file, generate a random 256-bit AES session key. Use the recipient's Kyber public key to encrypt this AES session key, creating an encapsulated session key that can be safely transmitted.</p>
