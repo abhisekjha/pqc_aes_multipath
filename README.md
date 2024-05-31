@@ -105,7 +105,7 @@ source venv/bin/activate
 
 2. Set the PYTHONPATH to include the current directory and the pyky directory:
 ```
-export PYTHONPATH=$PYTHONPATH:/path/to/pqc_aes_multipath:/path/to/pqc_aes_multipath/pyky
+echo $PYTHONPATH /Users/abhisekjha/Multipath_Research/PQC/pqc_aes_multipath:/Users/abhisekjha/Multipath_Research/PQC/pqc_aes_multipath/pyky
 ```
 3. To Verify PYTHONPATH
 
