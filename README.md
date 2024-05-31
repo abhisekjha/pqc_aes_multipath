@@ -1,6 +1,6 @@
 # Secure Messaging with Kyber and AES-256
 
-This project demonstrates how to securely encrypt packets of messages using AES-256, with the AES session keys being securely exchanged using Kyber, a post-quantum cryptographic algorithm. The process ensures that the encrypted messages are protected against both classical and quantum attacks.
+This project demonstrates how to securely encrypt packets of messages using AES-256, with the keys being securely exchanged using Kyber, a post-quantum cryptographic algorithm. The process ensures that the encrypted messages are protected against both classical and quantum attacks.
 
 ## Check Out the Webpage to learn more
 
