@@ -2,26 +2,11 @@
 
 This project demonstrates how to securely encrypt packets of messages using AES-256, with the AES session keys being securely exchanged using Kyber, a post-quantum cryptographic algorithm. The process ensures that the encrypted messages are protected against both classical and quantum attacks.
 
-## Process Overview
+## Check Out the Webpage to learn more
+<a href="https://www.abhisekjha.com.np/pqc_aes_multipath">
+    <img src="https://img.shields.io/badge/Website-PQC-AES-red?style=flat-square">
+</a>
 
-### Key Generation
-- Generate a pair of public and private keys for the recipient using Kyber.
-
-### Encrypting Session Key
-- For each message, generate a 256-bit AES session key.
-- Encrypt the AES session key using the recipient's Kyber public key.
-
-### Encrypting Messages
-- Encrypt the message using AES-256 with the generated session key.
-
-### Storing Encrypted Data
-- Store the encrypted session key and the encrypted message together in a file.
-
-### Decrypting Session Key
-- The recipient decrypts the AES session key using their Kyber private key.
-
-### Decrypting Messages
-- The recipient uses the decrypted AES session key to decrypt the message.
 
 ## Flowchart
 
@@ -66,33 +51,16 @@ This project demonstrates how to securely encrypt packets of messages using AES-
 ```
 
 ### Usage
-- Place your binary message files in the encoded folder.
-- Run the script script.py:
-``` python script.py ```
-- Encrypted files will be saved in the encrypted folder.
-- The decryption example at the end of the script demonstrates how to decrypt the files.
-
-
-### Explanation
-## Key Generation
-- Use Kyber to generate a public/private key pair for the recipient. The public key is used to encrypt the session keys, while the private key is used to decrypt them.
-
-## Encrypting the Session Key
-- For each message file, generate a random 256-bit AES session key.
-Use the recipient's Kyber public key to encrypt this AES session key, creating an encapsulated session key that can be safely transmitted.
-
-## Encrypting the Message
-- Encrypt the message content with AES-256 using the generated session key. AES-256 ensures the message is encrypted with strong, symmetric encryption.
-
-## Storing the Encrypted Data
-- Combine the encrypted session key and the AES-encrypted message into a single file. This file is stored or transmitted securely.
-
-## Decrypting the Session Key
-- The recipient receives the file, extracts the encrypted session key, and uses their Kyber private key to decrypt the session key.
-
-## Decrypting the Message
-- With the decrypted AES session key, the recipient decrypts the message content to retrieve the original message.
-
+- Includes the Encoded files in input folder.
+- Test cases can be run by
+``` python3 tests/test_encryption.py
+    python3 tests/test_decryption.py
+    python3 tests/test_key_generation.py
+    python3 tests/test_main.py
+    python3 tests/test_pqc_multipath.py
+```
+- tests/test_main.py includes the general test for sample message
+- test/test_pqc_multipath includes the test with Multipath encoded files
 
 This script ensures the secure encryption and decryption of messages using a combination of Kyber and AES-256, providing strong security against both current and future threats.
 
@@ -103,13 +71,37 @@ This script ensures the secure encryption and decryption of messages using a com
 source venv/bin/activate
 ```
 
-2. Set the PYTHONPATH to include the current directory and the pyky directory:
+2. Git clone the `pqc_aes_multipath` repo:
+```
+https://github.com/abhisekjha/pqc_aes_multipath.git
+cd pqc_aes_multipath
+
+```
+
+3. git clone `Kyber based PYKY`
+```
+https://github.com/asdfjkl/pyky.git
+
+```
+
+
+4. Set the PYTHONPATH to include the current directory and the pyky directory:
 ```
 echo $PYTHONPATH /Users/abhisekjha/Multipath_Research/PQC/pqc_aes_multipath:/Users/abhisekjha/Multipath_Research/PQC/pqc_aes_multipath/pyky
 ```
-3. To Verify PYTHONPATH
+5. To Verify PYTHONPATH
 
 ```
 echo $PYTHONPATH
 
 ```
+
+6. Install requirements.txt
+```
+pip install -r requirements.txt
+
+```
+
+## Acknowledgements
+
+I would like to thank the [pyky](https://github.com/asdfjkl/pyky) repository for providing the implementation of the Kyber cryptographic algorithm, which was used in this project.
