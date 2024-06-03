@@ -101,6 +101,10 @@ echo $PYTHONPATH
 pip install -r requirements.txt
 
 ```
+7. Run test cases using make
+```
+make
+```
 
 ## Acknowledgements
 
