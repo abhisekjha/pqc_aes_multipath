@@ -52,12 +52,13 @@ This project demonstrates how to securely encrypt packets of messages using AES-
 ### Usage
 - Includes the Encoded files in input folder.
 - Test cases can be run by
-``` python3 tests/test_encryption.py
+```make``` 
+- Makefile will run below test files.
+    python3 tests/test_encryption.py
     python3 tests/test_decryption.py
     python3 tests/test_key_generation.py
     python3 tests/test_main.py
-    python3 tests/test_pqc_multipath.py
-```
+    python3 tests/test_pqc_multipath.py 
 - tests/test_main.py includes the general test for sample message
 - test/test_pqc_multipath includes the test with Multipath encoded files
 
@@ -86,7 +87,7 @@ https://github.com/asdfjkl/pyky.git
 
 4. Set the PYTHONPATH to include the current directory and the pyky directory:
 ```
-export PTHONPATH /path/to/pqc_aes_multipath:/path/to/pqc_aes_multipath/pyky
+export PTHONPATH /path/to/pqc_aes_multipath:/path/to/pqc_aes_multipath
 ```
 5. To Verify PYTHONPATH
 
