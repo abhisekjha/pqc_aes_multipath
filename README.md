@@ -54,11 +54,11 @@ This project demonstrates how to securely encrypt packets of messages using AES-
 - Test cases can be run by
 ```make``` 
 - Makefile will run below test files.
-    python3 tests/test_encryption.py
-    python3 tests/test_decryption.py
-    python3 tests/test_key_generation.py
-    python3 tests/test_main.py
-    python3 tests/test_pqc_multipath.py 
+    - python3 tests/test_encryption.py
+    - python3 tests/test_decryption.py
+    - python3 tests/test_key_generation.py
+    - python3 tests/test_main.py
+    - python3 tests/test_pqc_multipath.py 
 - tests/test_main.py includes the general test for sample message
 - test/test_pqc_multipath includes the test with Multipath encoded files
 
@@ -75,13 +75,11 @@ source venv/bin/activate
 ```
 https://github.com/abhisekjha/pqc_aes_multipath.git
 cd pqc_aes_multipath
-
 ```
 
 3. git clone `Kyber based PYKY`
 ```
 https://github.com/asdfjkl/pyky.git
-
 ```
 
 
@@ -93,13 +91,11 @@ export PYTHONPATH=/path/to/pqc_aes_multipath:/path/to/pqc_aes_multipath
 
 ```
 echo $PYTHONPATH
-
 ```
 
 6. Install requirements.txt
 ```
 pip install -r requirements.txt
-
 ```
 7. Run test cases using make
 ```
