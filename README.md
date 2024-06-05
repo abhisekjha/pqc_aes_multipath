@@ -87,7 +87,7 @@ https://github.com/asdfjkl/pyky.git
 
 4. Set the PYTHONPATH to include the current directory and the pyky directory:
 ```
-export PTHONPATH /path/to/pqc_aes_multipath:/path/to/pqc_aes_multipath
+export PYTHONPATH=/path/to/pqc_aes_multipath:/path/to/pqc_aes_multipath
 ```
 5. To Verify PYTHONPATH
 
